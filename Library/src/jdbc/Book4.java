@@ -55,6 +55,7 @@ public class Book4 {
                     int result = insertLendingStmt.executeUpdate();
                     if (result > 0) {
                         System.out.println("Lending record inserted successfully.");
+                        System.out.println("Please return the book within 14 days to avoid a fine.");
                     } else {
                         System.out.println("Failed to insert lending record.");
                     }
